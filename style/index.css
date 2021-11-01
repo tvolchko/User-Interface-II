@@ -180,3 +180,9 @@ footer {
     /* border-top-style: double solid; */
     background-color: rgba(86, 92, 36, 0.8);
 }
+@media(max-width: 800px){
+
+}
+@media(max-width: 500px){
+    
+}
