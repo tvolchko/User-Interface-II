@@ -149,7 +149,7 @@ nav a {
     justify-content: center;
     transition:1s;
     color: rgba(0, 0, 0, 0);
-    font-size: 0.1rem;
+    font-size: 1rem;
 }
 /* .mid div h2{
     opacity: 0;
@@ -157,7 +157,7 @@ nav a {
 /* .mid div h2:hover{
 
 } */
-.mid div:hover{
+.mid div:focus{
     background-color: lightyellow;
     padding: 5%;
     border-radius: 25%;
@@ -175,4 +175,44 @@ nav a {
 }
 .mid div h2{
     text-align: center;
+}
+@media(max-width: 800px){
+    .mid div{
+        width:35%;
+    }
+    .mid div:focus{
+        font-size:1rem;
+        width:75%;
+        order:-1;
+    }
+}
+@media(max-width: 500px){
+    nav{
+        position: relative;
+        width: 35%;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-top: 5%;
+        border-radius: 12%;
+    }
+    header{
+        background-color: lightgrey;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header p{
+        margin: auto;
+        text-align: center;
+    }
+    nav a{
+        margin:0;
+        padding: 5%;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .top{
+        margin: auto;
+        width:100%
+    }
 }
